@@ -4,20 +4,197 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Document</title>
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      body {
+        background-image: url("/img/onepice.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Sniglet", cursive;
+      }
+    </style>
+
 </head>
 <body>
+    <div class="centro text-center mb-5">
     
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non, obcaecati reiciendis culpa explicabo accusamus. Suscipit animi accusantium similique quisquam esse nesciunt nisi nobis quis pariatur ipsum, harum eius reprehenderit?
-        Sunt minima vitae voluptatum placeat odit mollitia voluptate soluta incidunt exercitationem! Quae nihil ut beatae, aliquam quaerat possimus consequatur expedita mollitia iusto minus, dolor atque illo veniam illum perspiciatis fugit.
-        Assumenda magni, explicabo deserunt neque praesentium dolorem quidem ea, unde deleniti pariatur accusantium totam. Possimus natus voluptatibus modi deleniti nulla culpa praesentium minus? At incidunt quod corrupti iste sint odio.</p>
+    <div class="col-12">
+        <h1 class="text-center" style="font-size: 100px;">
+            CALCULADORA
+        </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" name="resultado" id="resultado">
+        </div>
+    </div>
+
+
+    <div class="row pb-2">
+        <div class="col-md-3">
+                <button type="button" class="btn btn-primary btn-lg"  onclick="">1</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary btn-lg">2</button>
+        
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary btn-lg">3</button>
+            </div>
+    
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">1</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">2</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">3</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">4</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">5</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">6</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">7</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">8</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">9</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">0</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">X</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">÷</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">√</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">²√</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">C</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">%</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">+</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">-</button>
+        </div>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg" onclick="">=</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">PI</button>
+        
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-lg">²</button>
+        </div>
+        
+        </div>
+        
+    </div>
+    
+ 
 
 
 
-
-
-
-
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
